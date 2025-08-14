@@ -1,16 +1,19 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
 [project]
 name = "mygeopy"
-version = "0.1.0"
-description = "hypotenuse test"
-readme = "README.md"
+version = "0.1.0a0"
+description = "My Python package for working with geometry."
+authors = [{name = "Izzy Muller", email="ipm324@my.utexas.edu"}]
 license = "MIT"
-license-files = {LICENSE.TXT}
-authors = [
-    { name = "Isabella Muller", email = "ipm324@my.utexas.edu" }
-]
-requires-python = ">=3.9"
-dependencies = []
+license-files = ["LICENSE.txt"]
 
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+[project.urls]
+Homepage = "https://github.com/hpschist/mygeopy"
+[project.optional-dependencies]
+tests = ["pytest"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
