@@ -1,6 +1,15 @@
 [project]
 name = "mygeopy"
 version = "0.1.0"
+description = "hypotenuse test"
+readme = "README.md"
+license = "MIT"
+license-files = {LICENSE.TXT}
+authors = [
+    { name = "Isabella Muller", email = "ipm324@my.utexas.edu" }
+]
+requires-python = ">=3.9"
+dependencies = []
 
 [build-system]
 requires = ["setuptools"]
